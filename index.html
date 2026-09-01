@@ -6,6 +6,7 @@
     <title>Siyuan Fan</title>
 
     <meta name="author" content="Siyuan Fan">
+    <meta name="description" content="Siyuan Fan's personal homepage — image processing, computational photography, deep learning, and edge AI systems.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
@@ -26,12 +27,12 @@
 		I am working on AINR/ISP @<a href="https://www.axera-tech.com/">Axera</a> in Hangzhou.
                 </p>
                 <p style="text-align:center">
-                  <a href="Siyuan.Fan@foxmail.com">Email</a> &nbsp;/&nbsp;
+                  <a href="mailto:Siyuan.Fan@foxmail.com">Email</a> &nbsp;/&nbsp;
                   <a href="https://github.com/starkfan007">Github</a>
                 </p>
               </td>
               <td style="padding:2.5%;width:37%;max-width:37%">
-                <a href="images/photo.jpg"><img style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" alt="profile photo" src="images/JonBarron.jpg" class="hoverZoomLink"></a>
+                <a href="images/photo.jpg"><img style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" alt="profile photo" src="images/photo.jpg" class="hoverZoomLink"></a>
               </td>
             </tr>
           </tbody></table>
@@ -40,50 +41,53 @@
               <td style="padding:16px;width:100%;vertical-align:middle">
                 <h2>Research</h2>
                 <p>
-                  I'm interested in image processing, deep learning, and computer vision. Some papers are <span class="highlight">highlighted</span>.
+                  I'm interested in computational photography, image signal processing, real-world image and video denoising, deep learning, and efficient AI systems for edge devices. My work focuses on making vision algorithms robust to challenging sensor noise and practical deployment constraints.
                 </p>
               </td>
             </tr>
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
-<tr onmouseout="paper_stop()" onmouseover="paper_start()">
-  <td style="padding:16px;width:20%;vertical-align:middle">
-    <div class="one">
-      <div class="two" id='paper_image'>
-        <img src='images/paper_after.jpg' width=100%>
-      </div>
-      <img src='images/paper_before.jpg' width=100%>
-    </div>
-    <script type="text/javascript">
-      function paper_start() {
-        document.getElementById('paper_image').style.opacity = "1";
-      }
-
-      function paper_stop() {
-        document.getElementById('paper_image').style.opacity = "0";
-      }
-      paper_stop()
-    </script>
+<tr>
+  <td style="padding:16px;width:20%;vertical-align:top">
+    <span class="projecttag">2026</span>
   </td>
   <td style="padding:8px;width:80%;vertical-align:middle">
-    <a href="https://example.com/">
-      <span class="papertitle">Paper Title</span>
-    </a>
+    <span class="papertitle">Hybrid VST for Extremely Dark Image Denoising</span>
     <br>
-    <a href="https://example.com/">Author 1</a>,
-    <a href="https://example.com/">Author 2</a>,
-    <strong>Your Name</strong>
+    A robust, edge-friendly variance-stabilizing transform that uses a linear mapping in the ultra-low-light region and smoothly transitions to a VST mapping at higher signal levels. The design prioritizes unbiased color and luminance reconstruction under black-level drift and sensor calibration errors.
+  </td>
+</tr>
+<tr>
+  <td style="padding:16px;width:20%;vertical-align:top">
+    <span class="projecttag">2026</span>
+  </td>
+  <td style="padding:8px;width:80%;vertical-align:middle">
+    <span class="papertitle">FPN Correction for Temporally Correlated Sensor Noise</span>
     <br>
-    <em>Conference/Journal</em>, Year
+    An analysis and calibration strategy for fixed-pattern noise in 3D denoising. The approach aligns SNR guidance with the actual multi-frame noise statistics, improving temporal denoising behavior and reducing artifacts caused by a mismatch between ideal and real sensor noise.
+  </td>
+</tr>
+<tr>
+  <td style="padding:16px;width:20%;vertical-align:top">
+    <span class="projecttag">2025</span>
+  </td>
+  <td style="padding:8px;width:80%;vertical-align:middle">
+    <span class="papertitle">YOND: Diffusion-Inspired Real-Raw Image Denoising</span>
     <br>
-    <a href="https://example.com/">project page</a>
-    /
-    <a href="https://arxiv.org/abs/xxxx.xxxxx">arXiv</a>
-    <p></p>
-    <p>
-    Brief description of your paper.
-    </p>
+    Research on interpreting neural denoisers from a diffusion perspective: using noise-level conditioning, iterative denoising, and interpretable VST-based noise estimation to improve generalization across raw sensors while retaining controllable detail.
+    <br>
+    <a href="https://arxiv.org/abs/2506.03645">arXiv</a>
+  </td>
+</tr>
+<tr>
+  <td style="padding:16px;width:20%;vertical-align:top">
+    <span class="projecttag">Notes</span>
+  </td>
+  <td style="padding:8px;width:80%;vertical-align:middle">
+    <span class="papertitle">NPU Compiler and Runtime Notes</span>
+    <br>
+    Technical notes on graph legalization, quantization, tiling, operator fusion, code generation, memory management, driver interaction, and runtime scheduling for edge NPU deployment.
   </td>
 </tr>
 
@@ -93,7 +97,7 @@
               <td style="padding:0px">
                 <br>
                 <p style="text-align:right;font-size:small;">
-                  Feel free to steal this website's <a href="https://github.com/jonbarron/jonbarron_website">source code</a>. <strong>Do not</strong> scrape the HTML from this page itself, as it includes analytics tags that you do not want on your own website &mdash; use the github code instead. Also, consider using <a href="https://leonidk.com/">Leonid Keselman</a>'s <a href="https://github.com/leonidk/new_website">Jekyll fork</a> of this page.
+                  © Siyuan Fan. This site is built as a lightweight static personal homepage.
                 </p>
               </td>
             </tr>

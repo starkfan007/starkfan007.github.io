@@ -102,6 +102,12 @@ h2 {
   font-weight: 700;
 }
 
+.projecttag {
+  color: #666;
+  font-size: 13px;
+  white-space: nowrap;
+}
+
 .name {
   padding-top: 20px;
   margin: 0;
